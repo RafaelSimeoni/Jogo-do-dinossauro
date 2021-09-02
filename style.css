@@ -1,0 +1,45 @@
+body {
+    background: #fafafa
+}
+
+.fundo-jogo {
+    background         : url(images/background.png) repeat-x;
+    background-position: 0 0;
+    position           : relative;
+    border-bottom      : solid;
+    height             : 300px;
+    animation          : moverFundo 600s infinite linear;
+}
+
+.dino {
+    background-image: url(images/dino.png);
+    width           : 60px;
+    height          : 60px;
+    position        : absolute;
+    bottom          : 0px;
+}
+
+.cacto {
+    background-image: url(images/cactus.png);
+    width           : 60px;
+    height          : 60px;
+    position        : absolute;
+    bottom          : -3px;
+}
+
+.fim-de-jogo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align : center;
+    color      : #666;
+    margin-top : 50px;
+}
+
+@keyframes moverFundo {
+    from {
+        background-position: 70000% 0
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}
